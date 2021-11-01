@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fivephilosophersgui.FivePhilosophersController">
+   <Circle fill="DODGERBLUE" layoutX="400.0" layoutY="312.0" radius="125.0" stroke="BLACK" strokeType="INSIDE" />
+    <Button fx:id="buttonStart" layoutX="375.0" layoutY="29.0" mnemonicParsing="false" onAction="#start" text="Start" />
+    <Rectangle fx:id="rectangleZeno" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" layoutX="171.0" layoutY="252.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+    <Rectangle fx:id="rectangleAristotle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" layoutX="551.0" layoutY="255.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+    <Rectangle fx:id="rectangleMarcus" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" layoutX="361.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+    <Rectangle fx:id="rectangleSocrates" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" layoutX="511.0" layoutY="405.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+    <Rectangle fx:id="rectanglePythagoras" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" layoutX="211.0" layoutY="405.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+   <Label layoutX="377.0" layoutY="127.0" text="Marcus" />
+   <Label layoutX="194.0" layoutY="284.0" text="Zeno" />
+   <Label layoutX="214.0" layoutY="437.0" text="Pythagoras" />
+   <Label layoutX="523.0" layoutY="437.0" text="Socrates" />
+   <Label layoutX="564.0" layoutY="287.0" text="Aristotle" />
+</AnchorPane>
