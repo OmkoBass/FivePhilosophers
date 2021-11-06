@@ -3,6 +3,8 @@ package com.example.fivephilosophersgui.Models;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
+import java.util.Random;
+
 public class Philosopher implements Runnable {
     String name;
     Stick leftStick;
@@ -20,7 +22,7 @@ public class Philosopher implements Runnable {
     private void think(){
         System.out.println(this.name + " is thinking...");
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -28,8 +30,10 @@ public class Philosopher implements Runnable {
 
     private void eat(){
         System.out.println(this.name + " is eating...");
+        Random random = new Random();
         try {
-            Thread.sleep(3000);
+            int waitTime = random.nextInt(5 - 3) + 3;
+            Thread.sleep(waitTime * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
